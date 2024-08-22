@@ -5,6 +5,16 @@
 
   &__body {
     background-color: #000;
+
+    &::before {
+      content: "";
+      width: 1000px;
+      height: 1000px;
+      background-color: #332f65;
+      filter: blur(500px);
+      position: absolute;
+      bottom: -600px;
+    }
   }
 
   &__header {
@@ -33,7 +43,7 @@
     position: absolute;
     right: -250px;
     top: 230px;
-  
+
     @include on-large {
       display: block;
     }
@@ -44,4 +54,17 @@
       margin-bottom: 27px;
     }
   }
+
+  // &__blur {
+  //   overflow: hidden;
+  //   &-right {
+  //     width: 912px;
+  //     height: 912px;
+  //     background-color: #332f65;
+  //     filter: blur(500px);
+  //     position: absolute;
+  //     bottom: -600px;
+  //     z-index: -10;
+  //   }
+  // }
 }

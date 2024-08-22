@@ -107,6 +107,15 @@ button {
 .Page__body {
   background-color: #000;
 }
+.Page__body::before {
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  background-color: #332f65;
+  filter: blur(500px);
+  position: absolute;
+  bottom: -600px;
+}
 .Page__header {
   margin-bottom: 32px;
 }
@@ -443,6 +452,7 @@ button {
   .Form__button {
     background-color: #ff3459;
     width: 100%;
+    max-width: 250px;
     margin-bottom: 20px;
     font-size: 15px;
   }

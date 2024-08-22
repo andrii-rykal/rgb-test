@@ -14,32 +14,14 @@
 @import "./blocks/Footer";
 @import "./blocks/Icons";
 
-
-
-body {
-  // background-image: url(../images/blur_mob.svg);
-  // background-repeat: no-repeat;
-  // background-position: bottom;
-  // background-size: cover;
-
-  // height: 100vh;
-
-  // &::after {
-  //   content: "";
-  //   width: 900px;
-  //   height: 900px;
-  //   background-image: url(../images/blur_mob.svg);
-  //   background-repeat: no-repeat;
-  //   background-position: bottom;
-  //   background-size: cover;
-  //   position: absolute;
-  //   overflow: hidden;
-  //   // bottom: 0;
-  //   // right: 0;
-  //   // left: 0;
-
-  //   border-radius: 100%;
-  //   // fill: #332f65;
-  //   filter: blur(206px);
-  // }
-}
+// body {
+//   &::before {
+//     content: "";
+//     width: 912px;
+//     height: 912px;
+//     background-color: #332f65;
+//     filter: blur(500px);
+//     position: absolute;
+//     bottom: -600px;
+//   }
+// }
