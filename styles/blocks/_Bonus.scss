@@ -1,12 +1,23 @@
-.About {
+.Bonus {
+  text-decoration: none;
   display: flex;
   gap: 16px;
   max-width: 225px;
 
+  @include on-tablet {
+    max-width: 100%;
+    gap: 30px;
+    align-items: center;
+  }
+
   &__img {
-    // flex-shrink: 0;
     width: 46px;
     height: 46px;
+
+    @include on-tablet {
+      width: 38px;
+      height: 38px;
+    }
   }
 
   &__info {
@@ -17,13 +28,8 @@
   &__title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 120%;
-    text-transform: uppercase;
+    line-height: 148%;
     color: #fff;
-
-    &-blue {
-      color: #4252d1;
-    }
   }
 
   &__text {

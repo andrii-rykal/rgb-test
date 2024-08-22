@@ -3,6 +3,12 @@
   background: #303a53;
   border-radius: 9px;
   padding: 40px 20px;
+  max-width: 350px;
+
+  @include on-tablet {
+    padding: 50px 59px;
+    border-radius: 10px;
+  }
 
   &__title {
     font-weight: 700;
@@ -11,6 +17,12 @@
     text-align: center;
     color: #fff;
     margin-bottom: 18px;
+
+    @include on-desktop {
+      width: 248px;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
   }
 
   &__red {
@@ -23,6 +35,14 @@
     line-height: 149%;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
+
+    @include on-tablet {
+      font-size: 12px;
+    }
+
+    @include on-desktop {
+      // width: 248px;
+    }
 
     &-link {
       display: block;

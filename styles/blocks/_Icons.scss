@@ -1,0 +1,59 @@
+.Icons {
+  width: 256px;
+  height: 474px;
+
+  &__box {
+    position: absolute;
+
+    &--html {
+      top: 36px;
+      right: 20px;
+    }
+    &--css {
+      top: 140px;
+      right: 120px;
+    }
+    &--js {
+      top: 200px;
+      right: 20px;
+    }
+    &--sub {
+      top: 280px;
+      right: 140px;
+    }
+    &--vsc {
+      top: 340px;
+      right: 50px;
+    }
+  }
+
+  &__HTML-dot {
+    position: absolute;
+    top: 15px;
+    right: -5px;
+  }
+
+  &__CSS-dot {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+  }
+
+  &__JS-dot {
+    position: absolute;
+    top: 17px;
+    right: -15px;
+  }
+
+  &__SUB-dot {
+    position: absolute;
+    top: -15px;
+    right: 5px;
+  }
+
+  &__VSC-dot {
+    position: absolute;
+    bottom: 17px;
+    right: -10px;
+  }
+}

@@ -1,0 +1,47 @@
+.About {
+  text-decoration: none;
+  display: flex;
+  gap: 16px;
+  max-width: 225px;
+
+  @include on-tablet {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  @include on-desktop {
+    margin-bottom: 16px;
+  }
+
+  &__img {
+    width: 46px;
+    height: 46px;
+
+    @include on-tablet {
+      width: 51px;
+      height: 49px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #fff;
+
+    &-blue {
+      color: #4252d1;
+    }
+  }
+
+  &__text {
+    line-height: 148%;
+    color: #fff;
+  }
+}

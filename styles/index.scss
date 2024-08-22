@@ -1,15 +1,18 @@
-@import "./normalize";
-@import "./fonts";
-@import "./Info-place";
-@import "./Header";
-@import "./Page";
-@import "./Content";
-@import "./Main";
-@import "./Box";
-@import "./Sign-up";
-@import "./Form";
-@import "./Bonus";
-@import "./About";
+@import "./utils/mixins";
+@import "./utils/normalize";
+@import "./blocks/fonts";
+@import "./blocks/Info-place";
+@import "./blocks/Header";
+@import "./blocks/Page";
+@import "./blocks/Content";
+@import "./blocks/Main";
+@import "./blocks/Box";
+@import "./blocks/Sign-up";
+@import "./blocks/Form";
+@import "./blocks/Bonus";
+@import "./blocks/About";
+@import "./blocks/Footer";
+@import "./blocks/Icons";
 
 
 

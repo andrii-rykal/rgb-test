@@ -4,133 +4,176 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./images/favicon.svg">
+    <link rel="icon" href="./favicon.ico" />
     <title>PowerCode Academy</title>
   </head>
   <body class="Page__body">
-    <header class="Header Page__header">
-      <div class="Header__logo">
-        <img src="./images/logo.svg" alt="logo" class="Header__logo-img" />
-      </div>
-      <div class="Header__info">
-        <div class="Info-place">
-          <img
-            src="./images/icon_calendar.svg"
-            alt="icon of calendar"
-            class="Info-place__icon"
-          />
-          <span class="Info-place__text">28 декабря</span>
-        </div>
-        <div class="Info-place">
-          <img
-            src="./images/icon_clock.svg"
-            alt="icon of clock"
-            class="Info-place__icon"
-          />
-          <span class="Info-place__text">3,5 часа</span>
-        </div>
-      </div>
-    </header>
-    <main class="Page__main Main">
-      <article class="Main__content Content">
-        <div class="Content__kind">
-          <img
-            src="./images/icon_earth.svg"
-            alt="icon of earth"
-            class="Content__kind-logo"
-          />
-          <span class="Content__kind-text">Вебинар</span>
-        </div>
+    
+    <div class="Page__container">
+      <div class="Icons Page__icons">
 
-        <h1 class="Content__title">front-end</h1>
-
-        <div class="Content__subtitle">
-          <div class="Box Content__Box">
-            <p class="Box__title">с нуля</p>
+        <div class="Icons__box Icons__box--html">
+          <svg class="Icons__HTML-dot" width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="4" cy="4.45471" r="4" fill="#F16529" />
+          </svg>
+          <img src="./images/icons/HTML5_logo.svg" alt="icon html" class="Icons__HTML-img">
+        </div>
+  
+  
+        <div class="Icons__box Icons__box--css">
+          <svg class="Icons__CSS-dot" width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="3" cy="3.45471" r="3" fill="#2965F1" />
+          </svg>
+          <img src="./images/icons/CSS3_logo.svg" alt="icon css" class="Icons__CSS-img">
+        </div>
+  
+  
+        <div class="Icons__box Icons__box--js">
+          <svg class="Icons__JS-dot" width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="4" cy="4.45471" r="4" fill="#F0BE25" />
+          </svg>
+          <img src="./images/icons/JS_logo.svg" alt="icon js" class="Icons__JS-img">
+        </div>
+  
+        <div class="Icons__box Icons__box--sub">
+          <svg class="Icons__SUB-dot" width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="3" cy="3" r="3" fill="#FF9800" />
+          </svg>
+          <img src="./images/icons/sublime_logo.svg" alt="icon sub" class="Icons__SUB">
+        </div>
+  
+        <div class="Icons__box Icons__box--vsc">
+          <svg class="Icons__VSC-dot" width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="3" cy="3" r="3" fill="#48AEF3" />
+          </svg>
+          <img src="./images/icons/VSCode_logo.svg" alt="icon vsc" class="Icons__VSC-img">
+        </div>
+        
+        
+        
+        
+        
+      </div>
+      <header class="Header Page__header">
+        <div class="Header__logo">
+          <img src="./images/logo.svg" alt="logo" class="Header__logo-img" />
+        </div>
+        <div class="Header__info">
+          <div class="Info-place Info-place--cal">
+            <img
+              src="./images/icon_calendar.svg"
+              alt="icon of calendar"
+              class="Info-place__icon"
+            />
+            <span class="Info-place__text">28 декабря</span>
           </div>
-          <p class="Content__subtitle-text">легкий старт в IT профессии</p>
+          <div class="Info-place Info-place--clock">
+            <img
+              src="./images/icon_clock.svg"
+              alt="icon of clock"
+              class="Info-place__icon"
+            />
+            <span class="Info-place__text">3,5 часа</span>
+          </div>
         </div>
-
-        <p class="Content__text">
-          Узнайте какими
-          <strong
-            >навыками должен обладать фронтенд разработчик в 2022 году</strong
+      </header>
+      <main class="Page__main Main">
+        <article class="Main__content Content">
+          <div class="Content__kind">
+            <img
+              src="./images/icon_earth.svg"
+              alt="icon of earth"
+              class="Content__kind-logo"
+            />
+            <span class="Content__kind-text">Вебинар</span>
+          </div>
+          <h1 class="Content__title">front-end</h1>
+          <div class="Content__subtitle">
+            <div class="Box Content__Box">
+              <p class="Box__title">с нуля</p>
+            </div>
+            <p class="Content__subtitle-text">легкий старт в IT профессии</p>
+          </div>
+          <p class="Content__text">
+            Узнайте какими
+            <strong
+              >навыками должен обладать фронтенд разработчик в 2022 году</strong
+            >
+            и как начать карьеру в востребованной профессии
+          </p>
+        </article>
+        <article class="Sign-up Main__sign-up">
+          <h2 class="Sign-up__title">
+            Запишитесь <span class="Sign-up__red">бесплатно</span><br />
+            и получите подарок
+          </h2>
+          <form
+            class="Sign-up__form Form"
+            name="form"
+            action="/"
+            method="post"
+            autocomplete="off"
           >
-          и как начать карьеру в востребованной профессии
-        </p>
-      </article>
-      <article class="Sign-up Main__sign-up">
-        <h2 class="Sign-up__title">
-          Запишитесь <span class="Sign-up__red">бесплатно</span><br />
-          и получите подарок
-        </h2>
-        <form
-          class="Sign-up__form Form"
-          name="form"
-          action="/"
-          method="post"
-          autocomplete="off"
-        >
-          <input
-            autocomplete="off"
-            type="text"
-            name="name"
-            class="Form__input Form__input-name"
-            placeholder="Ваше имя и фамилия"
-            required
-          />
-          <input
-            autocomplete="off"
-            type="tel"
-            name="phone"
-            class="Form__input Form__input-phone"
-            placeholder="Ваш номер телефона"
-            required
-          />
-          <input
-            autocomplete="off"
-            type="email"
-            name="email"
-            class="Form__input Form__input-email"
-            placeholder="Ваш email"
-            required
-          />
-          <button class="Form__button" type="submit">
-            Записаться бесплатно
-          </button>
-        </form>
-        <p class="Sign-up__privacy">
-          Нажимая на кнопку я согашаюсь 
-          <a href="#" class="Sign-up__privacy-link">
-            с политикой конфидециальности
-          </a>
-        </p>
-      </article>
-
-
-
-      <article class="Bonus Main__bonus">
-        <img src="./images/gift.png" alt="" class="Bonus__img">
-        <div class="Bonus__info">
-          <h3 class="Bonus__title">Бонус за регистрацию</h3>
-          <p class="Bonus__text">
-            PDF-файл "5 преимуществ профессии веб-дизайнера" 
+            <input
+              autocomplete="off"
+              type="text"
+              name="name"
+              class="Form__input Form__input-name"
+              placeholder="Ваше имя и фамилия"
+              required
+            />
+            <input
+              autocomplete="off"
+              type="tel"
+              name="phone"
+              class="Form__input Form__input-phone"
+              placeholder="Ваш номер телефона"
+              required
+            />
+            <input
+              autocomplete="off"
+              type="email"
+              name="email"
+              class="Form__input Form__input-email"
+              placeholder="Ваш email"
+              required
+            />
+            <button class="Form__button" type="submit">
+              Записаться бесплатно
+            </button>
+          </form>
+          <p class="Sign-up__privacy">
+            Нажимая на кнопку я согашаюсь
+            <a href="#" class="Sign-up__privacy-link">
+              с политикой конфиденциальности
+            </a>
           </p>
-        </div>
-      </article>
-
-
-
-
-      <article class="About Main__about">
-        <img src="./images/about.png" alt="" class="About__img">
-        <div class="About__info">
-          <h3 class="About__title">Кирилл <span class="About__title-blue">КАСАТОНОВ</span></h3>
-          <p class="About__text">
-            6 лет коммерческого опыта с такими  компаниями как Mercedes-Benz и другими крупными корпорациями
-          </p>
-        </div>
-      </article> 
-    </main>
+        </article>
+        <a href="#" class="Bonus Main__bonus">
+          <img src="./images/gift.png" alt="" class="Bonus__img" />
+          <div class="Bonus__info">
+            <h3 class="Bonus__title">Бонус за регистрацию</h3>
+            <p class="Bonus__text">
+              PDF-файл "5 преимуществ профессии фронтенд разработчика"
+            </p>
+          </div>
+        </a>
+        <a href="#" class="About Main__about">
+          <img src="./images/about.png" alt="" class="About__img" />
+          <div class="About__info">
+            <h3 class="About__title">
+              Кирилл <span class="About__title-blue">КАСАТОНОВ</span>
+            </h3>
+            <p class="About__text">
+              6 лет коммерческого опыта с такими компаниями как Mercedes-Benz и
+              другими крупными корпорациями
+            </p>
+          </div>
+        </a>
+      </main>
+    </div>
+    <footer class="Footer Page__footer">
+      <p class="Footer__text">front-end developer</p>
+    </footer>
   </body>
 </html>

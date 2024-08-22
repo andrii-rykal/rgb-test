@@ -4,6 +4,10 @@
   gap: 14px;
   align-items: center;
 
+  @include on-desktop {
+    width: 248px;
+  }
+
   &__input {
     border-radius: 4px;
     width: 100%;
@@ -16,6 +20,15 @@
     color: #fff;
     font-size: 12px;
     padding: 12px 26px;
+
+    @include on-tablet {
+      width: 100%;
+      // max-width: 248px;
+      height: 51px;
+      border-radius: 5px;
+      padding: 13px 22px;
+    }
+
 
     &::placeholder {
       color: #fff;
@@ -34,5 +47,13 @@
     text-align: center;
     color: #fff;
     margin-bottom: 18px;
+
+    @include on-tablet {
+      background-color: #ff3459;
+      width: 100%;
+      max-width: 248px;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
   }
 }

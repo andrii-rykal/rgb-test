@@ -1,0 +1,19 @@
+.Footer {
+  display: none;
+
+  @include on-large {
+    display: block;
+  }
+
+  &__text {
+    text-align: center;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 8vw;
+    letter-spacing: 0.5vw;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+    opacity: 0.1;
+  }
+}

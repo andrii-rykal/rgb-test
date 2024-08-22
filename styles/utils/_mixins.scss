@@ -1,0 +1,23 @@
+@mixin on-tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin on-large {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin grid {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+}

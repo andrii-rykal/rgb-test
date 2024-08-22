@@ -47,15 +47,35 @@ button {
   background-color: #302e5a;
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 6px 12px;
+  gap: 3px;
   border-radius: 6px;
+}
+.Info-place--cal {
+  padding: 6px;
+}
+@media (min-width: 768px) {
+  .Info-place--cal {
+    padding: 12px 22px;
+  }
+}
+.Info-place--clock {
+  padding: 6px 12px;
+}
+@media (min-width: 768px) {
+  .Info-place--clock {
+    padding: 12px 32px;
+  }
 }
 .Info-place__text {
   color: #fff;
   font-weight: 600;
   font-size: 11px;
   line-height: 76%;
+}
+@media (min-width: 768px) {
+  .Info-place__text {
+    font-size: 14px;
+  }
 }
 
 .Header {
@@ -67,6 +87,17 @@ button {
   display: flex;
   gap: 6px;
 }
+@media (min-width: 1024px) {
+  .Header__info {
+    gap: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .Header__logo-img {
+    width: 182px;
+    height: 56px;
+  }
+}
 
 .Page {
   font-family: "Gilroy", sans-serif;
@@ -75,10 +106,41 @@ button {
 }
 .Page__body {
   background-color: #000;
-  padding: 28px 16px 59px;
 }
 .Page__header {
   margin-bottom: 32px;
+}
+@media (min-width: 1024px) {
+  .Page__header {
+    margin-bottom: 116px;
+  }
+}
+.Page__container {
+  position: relative;
+  padding: 28px 16px 59px;
+  max-width: 928px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .Page__container {
+    padding: 34px 0 0;
+  }
+}
+.Page__icons {
+  display: none;
+  position: absolute;
+  right: -250px;
+  top: 230px;
+}
+@media (min-width: 1440px) {
+  .Page__icons {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .Page__main {
+    margin-bottom: 27px;
+  }
 }
 
 .Content {
@@ -86,6 +148,11 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .Content {
+    align-items: start;
+  }
 }
 .Content__kind {
   display: flex;
@@ -96,10 +163,26 @@ button {
   padding: 5px 10px;
   border-radius: 3px;
 }
+@media (min-width: 1024px) {
+  .Content__kind {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .Content__kind-logo {
+    width: 19px;
+    height: 19px;
+  }
+}
 .Content__kind-text {
   font-weight: 600;
   line-height: 150%;
   color: #fff;
+}
+@media (min-width: 1024px) {
+  .Content__kind-text {
+    font-size: 16px;
+  }
 }
 .Content__title {
   font-weight: 800;
@@ -107,6 +190,16 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #ff3459;
+}
+@media (min-width: 768px) {
+  .Content__title {
+    font-size: 65px;
+  }
+}
+@media (min-width: 1024px) {
+  .Content__title {
+    font-size: 77px;
+  }
 }
 .Content__subtitle {
   color: #fff;
@@ -116,9 +209,24 @@ button {
   justify-content: center;
   margin-bottom: 17px;
 }
+@media (min-width: 1024px) {
+  .Content__subtitle {
+    margin-bottom: 30px;
+  }
+}
 .Content__subtitle-text {
   font-weight: 600;
   font-size: 15px;
+}
+@media (min-width: 768px) {
+  .Content__subtitle-text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .Content__subtitle-text {
+    font-size: 22px;
+  }
 }
 .Content__text {
   font-size: 14px;
@@ -127,19 +235,74 @@ button {
   color: #fff;
   margin-bottom: 21px;
 }
+@media (min-width: 768px) {
+  .Content__text {
+    text-align: left;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .Content__text {
+    font-size: 18px;
+    margin-bottom: 59px;
+  }
+}
 
+@media (min-width: 768px) {
+  .Main {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
 .Main__content {
   max-width: 350px;
   margin: 0 auto;
+  grid-column: 1/7;
+  grid-row: 1/2;
+  justify-content: start;
+}
+@media (min-width: 768px) {
+  .Main__content {
+    max-width: 100%;
+  }
 }
 .Main__bonus {
   margin: 0 auto 22px;
+  grid-column: 1/6;
+  grid-row: 3/4;
+}
+@media (min-width: 768px) {
+  .Main__bonus {
+    margin: 0;
+  }
 }
 .Main__about {
   margin: 0 auto;
+  grid-column: 1/7;
+  grid-row: 2/3;
+}
+@media (min-width: 768px) {
+  .Main__about {
+    margin: 0;
+  }
 }
 .Main__sign-up {
+  margin: 36px auto 0;
   margin-bottom: 36px;
+  grid-column: 7/-1;
+  grid-row: 1/4;
+  justify-self: end;
+}
+@media (min-width: 768px) {
+  .Main__sign-up {
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .Main__sign-up {
+    grid-column: 8/-1;
+  }
 }
 
 .Box {
@@ -150,6 +313,11 @@ button {
   position: relative;
   transform: rotate(-3deg);
 }
+@media (min-width: 1024px) {
+  .Box {
+    padding: 11px 13px;
+  }
+}
 .Box__title {
   font-weight: 800;
   font-size: 16px;
@@ -157,12 +325,29 @@ button {
   color: #fff;
   transform: rotate(3deg);
 }
+@media (min-width: 768px) {
+  .Box__title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .Box__title {
+    font-size: 23px;
+  }
+}
 
 .Sign-up {
   box-shadow: 0 9px 45px 0 rgba(40, 127, 165, 0.1);
   background: #303a53;
   border-radius: 9px;
   padding: 40px 20px;
+  max-width: 350px;
+}
+@media (min-width: 768px) {
+  .Sign-up {
+    padding: 50px 59px;
+    border-radius: 10px;
+  }
 }
 .Sign-up__title {
   font-weight: 700;
@@ -171,6 +356,13 @@ button {
   text-align: center;
   color: #fff;
   margin-bottom: 18px;
+}
+@media (min-width: 1024px) {
+  .Sign-up__title {
+    width: 248px;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
 }
 .Sign-up__red {
   color: #ff3459;
@@ -181,6 +373,11 @@ button {
   line-height: 149%;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 768px) {
+  .Sign-up__privacy {
+    font-size: 12px;
+  }
 }
 .Sign-up__privacy-link {
   display: block;
@@ -194,6 +391,11 @@ button {
   gap: 14px;
   align-items: center;
 }
+@media (min-width: 1024px) {
+  .Form {
+    width: 248px;
+  }
+}
 .Form__input {
   border-radius: 4px;
   width: 100%;
@@ -206,6 +408,14 @@ button {
   color: #fff;
   font-size: 12px;
   padding: 12px 26px;
+}
+@media (min-width: 768px) {
+  .Form__input {
+    width: 100%;
+    height: 51px;
+    border-radius: 5px;
+    padding: 13px 22px;
+  }
 }
 .Form__input::placeholder {
   color: #fff;
@@ -223,15 +433,38 @@ button {
   color: #fff;
   margin-bottom: 18px;
 }
+@media (min-width: 768px) {
+  .Form__button {
+    background-color: #ff3459;
+    width: 100%;
+    max-width: 248px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+}
 
 .Bonus {
+  text-decoration: none;
   display: flex;
   gap: 16px;
   max-width: 225px;
 }
+@media (min-width: 768px) {
+  .Bonus {
+    max-width: 100%;
+    gap: 30px;
+    align-items: center;
+  }
+}
 .Bonus__img {
   width: 46px;
   height: 46px;
+}
+@media (min-width: 768px) {
+  .Bonus__img {
+    width: 38px;
+    height: 38px;
+  }
 }
 .Bonus__info {
   display: flex;
@@ -249,13 +482,31 @@ button {
 }
 
 .About {
+  text-decoration: none;
   display: flex;
   gap: 16px;
   max-width: 225px;
 }
+@media (min-width: 768px) {
+  .About {
+    max-width: 100%;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .About {
+    margin-bottom: 16px;
+  }
+}
 .About__img {
   width: 46px;
   height: 46px;
+}
+@media (min-width: 768px) {
+  .About__img {
+    width: 51px;
+    height: 49px;
+  }
 }
 .About__info {
   display: flex;
@@ -274,6 +525,79 @@ button {
 .About__text {
   line-height: 148%;
   color: #fff;
+}
+
+.Footer {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .Footer {
+    display: block;
+  }
+}
+.Footer__text {
+  text-align: center;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 8vw;
+  letter-spacing: 0.5vw;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 2px;
+  opacity: 0.1;
+}
+
+.Icons {
+  width: 256px;
+  height: 474px;
+}
+.Icons__box {
+  position: absolute;
+}
+.Icons__box--html {
+  top: 36px;
+  right: 20px;
+}
+.Icons__box--css {
+  top: 140px;
+  right: 120px;
+}
+.Icons__box--js {
+  top: 200px;
+  right: 20px;
+}
+.Icons__box--sub {
+  top: 280px;
+  right: 140px;
+}
+.Icons__box--vsc {
+  top: 340px;
+  right: 50px;
+}
+.Icons__HTML-dot {
+  position: absolute;
+  top: 15px;
+  right: -5px;
+}
+.Icons__CSS-dot {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+.Icons__JS-dot {
+  position: absolute;
+  top: 17px;
+  right: -15px;
+}
+.Icons__SUB-dot {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+}
+.Icons__VSC-dot {
+  position: absolute;
+  bottom: 17px;
+  right: -10px;
 }
 
 /*# sourceMappingURL=style.css.map */

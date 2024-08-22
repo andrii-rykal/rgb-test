@@ -1,0 +1,47 @@
+.Page {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+
+  &__body {
+    background-color: #000;
+  }
+
+  &__header {
+    margin-bottom: 32px;
+
+    @include on-desktop {
+      margin-bottom: 116px;
+    }
+  }
+
+  &__container {
+    position: relative;
+
+    padding: 28px 16px 59px;
+
+    max-width: 928px;
+    margin: 0 auto;
+
+    @include on-desktop {
+      padding: 34px 0 0;
+    }
+  }
+
+  &__icons {
+    display: none;
+    position: absolute;
+    right: -250px;
+    top: 230px;
+  
+    @include on-large {
+      display: block;
+    }
+  }
+
+  &__main {
+    @include on-desktop {
+      margin-bottom: 27px;
+    }
+  }
+}
