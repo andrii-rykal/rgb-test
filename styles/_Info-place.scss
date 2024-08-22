@@ -1,0 +1,15 @@
+.Info-place {
+  background-color: #302e5a;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  &__text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 76%;
+  }
+}

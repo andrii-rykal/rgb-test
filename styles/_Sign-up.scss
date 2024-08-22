@@ -1,0 +1,33 @@
+.Sign-up {
+  box-shadow: 0 9px 45px 0 rgba(40, 127, 165, 0.1);
+  background: #303a53;
+  border-radius: 9px;
+  padding: 40px 20px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 116%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 18px;
+  }
+
+  &__red {
+    color: #ff3459;
+  }
+
+  &__privacy {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 149%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+
+    &-link {
+      display: block;
+      color: inherit;
+      text-decoration-skip-ink: none;
+    }
+  }
+}

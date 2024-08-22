@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="Page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body class="Page__body">
+    <header class="Header Page__header">
+      <div class="Header__logo">
+        <img src="./images/logo.svg" alt="logo" class="Header__logo-img" />
+      </div>
+      <div class="Header__info">
+        <div class="Info-place">
+          <img
+            src="./images/icon_calendar.svg"
+            alt="icon of calendar"
+            class="Info-place__icon"
+          />
+          <span class="Info-place__text">28 декабря</span>
+        </div>
+        <div class="Info-place">
+          <img
+            src="./images/icon_clock.svg"
+            alt="icon of clock"
+            class="Info-place__icon"
+          />
+          <span class="Info-place__text">3,5 часа</span>
+        </div>
+      </div>
+    </header>
+    <main class="Page__main Main">
+      <article class="Main__content Content">
+        <div class="Content__kind">
+          <img
+            src="./images/icon_earth.svg"
+            alt="icon of earth"
+            class="Content__kind-logo"
+          />
+          <span class="Content__kind-text">Вебинар</span>
+        </div>
+
+        <h1 class="Content__title">front-end</h1>
+
+        <div class="Content__subtitle">
+          <div class="Box Content__Box">
+            <p class="Box__title">с нуля</p>
+          </div>
+          <p class="Content__subtitle-text">легкий старт в IT профессии</p>
+        </div>
+
+        <p class="Content__text">
+          Узнайте какими
+          <strong
+            >навыками должен обладать фронтенд разработчик в 2022 году</strong
+          >
+          и как начать карьеру в востребованной профессии
+        </p>
+      </article>
+      <article class="Sign-up Main__sign-up">
+        <h2 class="Sign-up__title">
+          Запишитесь <span class="Sign-up__red">бесплатно</span><br />
+          и получите подарок
+        </h2>
+        <form
+          class="Sign-up__form Form"
+          name="form"
+          action="/"
+          method="post"
+          autocomplete="off"
+        >
+          <input
+            autocomplete="off"
+            type="text"
+            name="name"
+            class="Form__input Form__input-name"
+            placeholder="Ваше имя и фамилия"
+            required
+          />
+          <input
+            autocomplete="off"
+            type="tel"
+            name="phone"
+            class="Form__input Form__input-phone"
+            placeholder="Ваш номер телефона"
+            required
+          />
+          <input
+            autocomplete="off"
+            type="email"
+            name="email"
+            class="Form__input Form__input-email"
+            placeholder="Ваш email"
+            required
+          />
+          <button class="Form__button" type="submit">
+            Записаться бесплатно
+          </button>
+        </form>
+        <p class="Sign-up__privacy">
+          Нажимая на кнопку я согашаюсь 
+          <a href="#" class="Sign-up__privacy-link">
+            с политикой конфидециальности
+          </a>
+        </p>
+      </article>
+
+
+
+      <article class="Bonus Main__bonus">
+        <img src="./images/gift.png" alt="" class="Bonus__img">
+        <div class="Bonus__info">
+          <h3 class="Bonus__title">Бонус за регистрацию</h3>
+          <p class="Bonus__text">
+            PDF-файл "5 преимуществ профессии веб-дизайнера" 
+          </p>
+        </div>
+      </article>
+
+
+
+
+      <article class="About Main__about">
+        <img src="./images/about.png" alt="" class="About__img">
+        <div class="About__info">
+          <h3 class="About__title">Кирилл <span class="About__title-blue">КАСАТОНОВ</span></h3>
+          <p class="About__text">
+            6 лет коммерческого опыта с такими  компаниями как Mercedes-Benz и другими крупными корпорациями
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

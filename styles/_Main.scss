@@ -1,0 +1,19 @@
+.Main {
+  &__content {
+    max-width: 350px;
+    margin: 0 auto;
+    display: none;
+  }
+
+  &__bonus {
+    margin: 0 auto 22px;
+  }
+
+  &__about {
+    margin: 0 auto;
+  }
+
+  &__sign-up {
+    margin-bottom: 36px;
+  }
+}
