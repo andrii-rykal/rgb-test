@@ -19,6 +19,10 @@
     color: #fff;
     margin-bottom: 18px;
 
+    @include on-tablet {
+      text-align: left;
+    }
+
     @include on-desktop {
       // width: 248px;
       font-size: 22px;
