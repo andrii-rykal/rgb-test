@@ -361,7 +361,6 @@ button {
 }
 @media (min-width: 1024px) {
   .Sign-up__title {
-    width: 248px;
     font-size: 22px;
     margin-bottom: 20px;
   }
@@ -439,7 +438,6 @@ button {
   .Form__button {
     background-color: #ff3459;
     width: 100%;
-    max-width: 248px;
     margin-bottom: 20px;
     font-size: 15px;
   }
