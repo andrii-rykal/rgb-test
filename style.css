@@ -131,7 +131,6 @@ button {
 .Main__content {
   max-width: 350px;
   margin: 0 auto;
-  display: none;
 }
 .Main__bonus {
   margin: 0 auto 22px;
@@ -194,7 +193,6 @@ button {
   flex-direction: column;
   gap: 14px;
   align-items: center;
-  display: none;
 }
 .Form__input {
   border-radius: 4px;
