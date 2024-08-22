@@ -185,6 +185,7 @@ button {
   }
 }
 .Content__title {
+  white-space: nowrap;
   font-weight: 800;
   font-size: 53px;
   text-transform: uppercase;
@@ -345,6 +346,7 @@ button {
 }
 @media (min-width: 768px) {
   .Sign-up {
+    max-width: 100%;
     padding: 50px 59px;
     border-radius: 10px;
   }

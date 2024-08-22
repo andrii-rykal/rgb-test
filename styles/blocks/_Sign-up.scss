@@ -6,6 +6,7 @@
   max-width: 350px;
 
   @include on-tablet {
+    max-width: 100%;
     padding: 50px 59px;
     border-radius: 10px;
   }
