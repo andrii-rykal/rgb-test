@@ -550,11 +550,10 @@ button {
   color: transparent;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 8vw;
-  letter-spacing: 8px;
+  font-size: 130px;
   -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 2px;
-  opacity: 0.1;
+  opacity: 5%;
 }
 
 .Icons {
