@@ -106,6 +106,10 @@ button {
 }
 .Page__body {
   background-color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .Page__header {
   margin-bottom: 32px;
@@ -547,7 +551,7 @@ button {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 8vw;
-  letter-spacing: 0.5vw;
+  letter-spacing: 8px;
   -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 2px;
   opacity: 0.1;
